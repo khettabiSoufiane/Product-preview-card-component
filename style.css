@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap&family=Montserrat:wght@700&display=swap");
+
+:root {
+  --cream-color: hsl(30, 38%, 92%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Dark-blue: hsl(212, 21%, 14%);
+  --Dark-gray: hsl(228, 12%, 48%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+  background: var(--cream-color);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#article-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 1rem;
+}
+
+.img-pro-desktop {
+  display: block;
+  max-width: 100%;
+}
+
+#article-main .img-pro-desktop {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#article-main .section-right {
+  background-color: #fff;
+  padding: 2rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#article-main .section-right .perfume-category {
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--Dark-gray);
+}
+
+#article-main .section-right .parfume-title {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 1;
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--Dark-blue);
+}
+
+#article-main .section-right .perfume-discreption {
+  font-size: 14px;
+  color: var(--Dark-gray);
+  line-height: 1.6;
+}
+
+#article-main .section-right .parfum-price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#article-main .section-right .parfum-price .perfume-discount-price {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  margin-right: 20px;
+  color: var(--Dark-cyan);
+}
+
+#article-main .section-right .parfum-price .perfume-original-price {
+  color: var(--Dark-gray);
+}
+
+#article-main .section-right .perfume-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  background-color: var(--Dark-cyan);
+  color: #fff;
+  width: 100%;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+#article-main .section-right .perfume-button .material-symbols-outlined {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  #article-main {
+    grid-template-columns: 1fr;
+  }
+  #article-main .img-pro-desktop {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  #article-main .section-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  #article-main .section-right .perfume-category {
+    font-size: 30px;
+  }
+  #article-main .section-right .perfume-discreption {
+    font-size: 25.5px;
+  }
+  #article-main .section-right .parfume-title {
+    font-family: "Fraunces", serif;
+    font-size: 60px;
+  }
+  #article-main .section-right .parfum-price .perfume-discount-price {
+    font-size: 60px;
+  }
+  #article-main .section-right .parfum-price .perfume-original-price {
+    font-size: 28px;
+  }
+  #article-main .section-right .perfume-button {
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  #article-main .section-right .perfume-button .material-symbols-outlined {
+    font-size: 35px;
+  }
+}
