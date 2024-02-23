@@ -57,7 +57,7 @@ body {
   font-family: "Fraunces", serif;
   font-size: 32px;
   line-height: 1;
-  margin: 20px 0;
+  margin: 25px 0;
   font-weight: bold;
   text-transform: capitalize;
   color: var(--Dark-blue);
@@ -66,13 +66,14 @@ body {
 #article-main .section-right .perfume-discreption {
   font-size: 14px;
   color: var(--Dark-gray);
+  margin: 26px 0;
   line-height: 1.6;
 }
 
 #article-main .section-right .parfum-price {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin-bottom: 24px;
 }
 
 #article-main .section-right .parfum-price .perfume-discount-price {
